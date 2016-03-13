@@ -1,0 +1,6 @@
+- name: portfolio
+  url: /portfolio/
+- name: blog
+  url: /blog/index
+- name: resume
+  url: /cv/

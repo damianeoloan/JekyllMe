@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body{% if page.url contains 'blog' %} class="white-page"{% endif %}>
+
+    {% include header.html %}
+
+    <main class="page-content{% assign url = page.url %}{% if url == '/portfolio/index' %} portolio-container{% endif %}">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
