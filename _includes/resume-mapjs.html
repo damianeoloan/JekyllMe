@@ -1,10 +1,12 @@
-{% for experience in site.resume-items.experiences %}
 <script>
-function initMap_{{ forloop.index }}() {
-  var myLatLng_{{ forloop.index }} = {lat: {{ experience.coordinates.latitude }}, lng: {{ experience.coordinates.longitude }}};
-
+{% for experience in site.resume-items.experiences %}
+var map_{{ forloop.index }};
+var LatLang_{{ forloop.index }} = {{ experience.coordinates.latitude | prepend: '{lat: ' }}, {{ experience.coordinates.longitude | prepend: 'lng: ' }}};
+{% endfor %}
+function initMap() {
+  {% for experience in site.resume-items.experiences %}
   var map_{{ forloop.index }} = new google.maps.Map(document.getElementById('map_{{ forloop.index }}'), {
-    zoom: 4,
+    zoom: 8,
     center: myLatLng_{{ forloop.index }}
   });
 
@@ -13,9 +15,9 @@ function initMap_{{ forloop.index }}() {
     map: map_{{ forloop.index }},
     title: '{{ experience.address }}'
   });
+  {% endfor %}
 }
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.api_keys.google }}&callback=initMap_{{ forloop.index }}"
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.api_keys.google }}&callback=initMap"
   type="text/javascript">
-{% endfor %}

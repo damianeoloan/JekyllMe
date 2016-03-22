@@ -126,7 +126,7 @@ resume-items:
   experiences:
   - title: A job title
     company: A company name
-    addresss: 1 Random St, Randomville
+    address: 1 Random St, Randomville
     coordinates:
       latitude: 40.036730
       longitude: 116.315243

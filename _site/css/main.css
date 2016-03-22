@@ -1039,8 +1039,6 @@ article.resume-items, section#resume {
     @media screen and (max-width: 750px) {
       article.resume-items section#experience div.experience-item, section#resume section#experience div.experience-item {
         width: 90%; } }
-    article.resume-items section#experience div.experience-item .map-container, section#resume section#experience div.experience-item .map-container {
-      padding: 0.05rem; }
     article.resume-items section#experience div.experience-item #resume-map-wrapper, section#resume section#experience div.experience-item #resume-map-wrapper {
       height: 300px; }
       @media screen and (max-width: 800px) {

@@ -4,29 +4,23 @@
     <title>JekyllMe</title>
     <description>your free personal website
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Mar 2016 12:48:13 +0000</pubDate>
-    <lastBuildDate>Tue, 22 Mar 2016 12:48:13 +0000</lastBuildDate>
+    <link>https://damianeoloan.github.io/JekyllMe/</link>
+    <atom:link href="https://damianeoloan.github.io/JekyllMe/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Tue, 22 Mar 2016 14:42:11 +0000</pubDate>
+    <lastBuildDate>Tue, 22 Mar 2016 14:42:11 +0000</lastBuildDate>
     <generator>Jekyll v3.0.3</generator>
     
       <item>
         <title>Welcome to JekyllMe</title>
-        <description>&lt;p&gt;JekyllMe is a free Jekyll theme for personal websites.&lt;/p&gt;
+        <description>&lt;p&gt;JekyllMe is a free Jekyll theme for personal portfolio websites.&lt;/p&gt;
 
-&lt;p&gt;Your website includes a CV / resume, portfolio slideshow, blog and contact form, wrapped in a single page.&lt;/p&gt;
+&lt;p&gt;By simply copying this site and replacing a few lines in a few files you’ll make it your own. Have a look around and see if it meets your needs - if you have any feedback or requests, feel free to &lt;a href=&quot;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#116;&amp;#111;:&amp;#100;&amp;#097;&amp;#109;&amp;#105;&amp;#097;&amp;#110;&amp;#111;&amp;#108;&amp;#111;&amp;#097;&amp;#110;&amp;#048;&amp;#064;&amp;#103;&amp;#109;&amp;#097;&amp;#105;&amp;#108;&amp;#046;&amp;#099;&amp;#111;&amp;#109;&amp;#063;&amp;#115;&amp;#117;&amp;#098;&amp;#106;&amp;#101;&amp;#099;&amp;#116;&amp;#061;&amp;#074;&amp;#101;&amp;#107;&amp;#121;&amp;#108;&amp;#108;&amp;#079;&amp;#114;&amp;#103;&amp;#032;&amp;#070;&amp;#101;&amp;#101;&amp;#100;&amp;#098;&amp;#097;&amp;#099;&amp;#107;&quot;&gt;get in touch&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;1&lt;/p&gt;
-
-&lt;p&gt;2&lt;/p&gt;
-
-&lt;p&gt;3&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;/setup&quot;&gt;How to set up your website&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Otherwise, grab a coffee and learn &lt;a href=&quot;/JekyllMe/news/setup/&quot;&gt;how to set up your website&lt;/a&gt;.&lt;/p&gt;
 </description>
         <pubDate>Tue, 16 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://localhost:4000/welcome-to-jekyll/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/welcome-to-jekyll/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/welcome-to-jekyll/</guid>
         
         
         <category>blog</category>
@@ -35,7 +29,7 @@
     
       <item>
         <title>A Post Style Guide</title>
-        <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;a href=&quot;/a-post-style-guide/&quot;&gt;Donec a diam lectus.&lt;/a&gt; Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.&lt;/p&gt;
+        <description>&lt;p&gt;This post displays how your article elements will appear. Lorem ipsum dolor sit amet, consectetur adipiscing elit. &lt;a href=&quot;/a-post-style-guide/&quot;&gt;Donec a diam lectus.&lt;/a&gt; Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.&lt;/p&gt;
 
 &lt;h2 id=&quot;this-is-a-h2&quot;&gt;This is a h2&lt;/h2&gt;
 
@@ -100,8 +94,8 @@
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;cat&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;in&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;site.cats&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;err&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/p&gt;
 </description>
         <pubDate>Mon, 15 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/a-post-style-guide/</link>
-        <guid isPermaLink="true">http://localhost:4000/a-post-style-guide/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/a-post-style-guide/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/a-post-style-guide/</guid>
         
         
         <category>blog</category>
@@ -109,12 +103,12 @@
       </item>
     
       <item>
-        <title>A Sample Post 14</title>
+        <title>Setup</title>
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
 </description>
         <pubDate>Sun, 14 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sample-post-14/</link>
-        <guid isPermaLink="true">http://localhost:4000/sample-post-14/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/sample-post-14/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/sample-post-14/</guid>
         
         
         <category>blog</category>
@@ -128,8 +122,8 @@
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
 </description>
         <pubDate>Sat, 13 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sample-post-13/</link>
-        <guid isPermaLink="true">http://localhost:4000/sample-post-13/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/sample-post-13/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/sample-post-13/</guid>
         
         
         <category>blog</category>
@@ -141,8 +135,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
 </description>
         <pubDate>Fri, 12 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sample-post-12/</link>
-        <guid isPermaLink="true">http://localhost:4000/sample-post-12/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/sample-post-12/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/sample-post-12/</guid>
         
         
         <category>blog</category>
@@ -154,8 +148,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
 </description>
         <pubDate>Thu, 11 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sample-post-11/</link>
-        <guid isPermaLink="true">http://localhost:4000/sample-post-11/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/sample-post-11/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/sample-post-11/</guid>
         
         
         <category>blog</category>
@@ -167,8 +161,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
 </description>
         <pubDate>Wed, 10 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sample-post-10/</link>
-        <guid isPermaLink="true">http://localhost:4000/sample-post-10/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/sample-post-10/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/sample-post-10/</guid>
         
         
         <category>blog</category>
@@ -180,8 +174,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
 </description>
         <pubDate>Tue, 09 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sample-post-9/</link>
-        <guid isPermaLink="true">http://localhost:4000/sample-post-9/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/sample-post-9/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/sample-post-9/</guid>
         
         
         <category>blog</category>
@@ -193,8 +187,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
 </description>
         <pubDate>Mon, 08 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sample-post-8/</link>
-        <guid isPermaLink="true">http://localhost:4000/sample-post-8/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/sample-post-8/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/sample-post-8/</guid>
         
         
         <category>blog</category>
@@ -206,8 +200,8 @@
         <description>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur. Donec ut libero sed arcu vehicula ultricies a non tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut gravida lorem. Ut turpis felis, pulvinar a semper sed, adipiscing id dolor. Pellentesque auctor nisi id magna consequat sagittis. Curabitur dapibus enim sit amet elit pharetra tincidunt feugiat nisl imperdiet. Ut convallis libero in urna ultrices accumsan. Donec sed odio eros. Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem facilisis semper ac in est.&lt;/p&gt;
 </description>
         <pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate>
-        <link>http://localhost:4000/sample-post-7/</link>
-        <guid isPermaLink="true">http://localhost:4000/sample-post-7/</guid>
+        <link>https://damianeoloan.github.io/JekyllMe/sample-post-7/</link>
+        <guid isPermaLink="true">https://damianeoloan.github.io/JekyllMe/sample-post-7/</guid>
         
         
         <category>blog</category>
