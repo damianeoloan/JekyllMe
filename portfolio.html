@@ -1,11 +1,11 @@
 ---
 layout: default
 title: Portfolio
+permalink: /portfolio
 ---
 <h1 class="post-title no-margin">{{ page.title }}</h1>
 <ul class="grid-container portfolio-index">
 {% for item in site.portfolio-items %}
-  {% unless item.url == page.url %}
   {% comment %}
   {% Check how many portfolio items to set grid format %}
   {% endcomment %}
@@ -17,11 +17,10 @@ title: Portfolio
   <li class="one-quarter col">
   {% endif %}
     <figure class="portfolio-index-item">
-      <a href="{{ item.url }}"><img src="{% for image in item.portfolio-images reversed | limit: 1 %}{{ image.img-path }}{% endfor %}" alt="{{ forloop.rindex | prepend: ' image '| prepend: page.title }}"></a>
-      <a href="{{ item.url }}"><figcaption>{{ item.title }}</figcaption></a>
+      <a href="{{ item.url | prepend: site.baseurl }}"><img src="{% for image in item.portfolio-images reversed | limit: 1 %}{{ image.img-path }}{% endfor %}" alt="{{ forloop.rindex | prepend: ' image '| prepend: page.title }}"></a>
+      <a href="{{ item.url | prepend: site.baseurl }}"><figcaption>{{ item.title }}</figcaption></a>
       {% include social-shares.html %}
     </figure>
   </li>
-  {% endunless %}
 {% endfor %}
 </ul>
