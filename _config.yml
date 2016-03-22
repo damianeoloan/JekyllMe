@@ -37,6 +37,9 @@ gems:
 paginate: 8
 paginate_path: "/blog/page:num/"
 
+# Mentions
+jekyll-mentions: https://twitter.com
+
 # Collections
 collections:
   portfolio-items:
