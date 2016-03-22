@@ -1,10 +1,10 @@
 <script type="text/javascript">
 function initMap() {
-  {% for experience in site.resume-items.experiences %}var map_{{ forloop.index }};
+  {% comment %}Declare a map and marker using the forloop index at each work experience item{% endcomment %}{% for experience in site.resume-items.experiences %}var map_{{ forloop.index }};
   var LatLng_{{ forloop.index }} = {{ experience.coordinates.latitude | prepend: '{lat: ' }}, {{ experience.coordinates.longitude | prepend: 'lng: ' }}};
   {% endfor %}
-  {% for experience in site.resume-items.experiences %}var map_{{ forloop.index }} = new google.maps.Map(document.getElementById('map_{{ forloop.index }}'), {
-    zoom: 8,
+  {% comment %}Create each map and marker{% endcomment %}{% for experience in site.resume-items.experiences %}var map_{{ forloop.index }} = new google.maps.Map(document.getElementById('map_{{ forloop.index }}'), {
+    zoom: 12,
     center: LatLng_{{ forloop.index }}
   });
   var marker_{{ forloop.index }} = new google.maps.Marker({

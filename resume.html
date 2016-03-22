@@ -3,13 +3,12 @@ layout: page
 title: CV
 permalink: /resume
 ---
-<article class="resume-items">
+<article class="resume-items" itemscope itemtype="http://schema.org/Person">
   <section id="summary">
-    <img src="{{ site.resume-items.avatar | prepend: site.baseurl }}"></img>
-    <h1>{{ site.resume-items.name }}</h1>
-    <h4>{{ site.resume-items.title }}</h4>
-    <h4>{{ site.resume-items.location }}</h4>
-    <div class="resume-divider">&nbsp;</div>
+    <img src="{{ site.resume-items.avatar | prepend: site.baseurl }}" alt="{{ site.resume-items.name | append: ': Resume Image' }}"></img>
+    <h1 itemprop="name">{{ site.resume-items.name }}</h1>
+    <h4 itemprop="jobTitle">{{ site.resume-items.title }}</h4>
+    <h4 itemprop="address">{{ site.resume-items.location }}</h4>
   </section>
 
   <section id="languages">
@@ -18,20 +17,20 @@ permalink: /resume
     {% for language in site.resume-items.languages %}
     <div>
       {{ language.icon }}
-      <p><span>{{ language.level }}&nbsp;</span>{{ language.name }}</p>
+      <p class="no-margin"><span>{{ language.level }}&nbsp;</span>{{ language.name }}</p>
     </div>
     {% endfor %}
   </section>
   <div class="resume-divider">&nbsp;</div>
 
-  <section id="skills">
-    <h2>Skills</h2>
+  <section id="skills" itemscope itemtype="http://schmema.org/ItemList">
+    <h2 itemprop="name">Skills</h2>
 
     {% for skill in site.resume-items.skills %}
       <div class="skill-container">&nbsp;
         <div class="measure-container">
           <div class="skill-label">
-            <p>{{ skill.name }}</p>
+            <p itemprop="ItemListElement">{{ skill.name }}</p>
           </div>
           <div class="skill-measure" style="width:{{ skill.level }}%"></div>
         </div>
@@ -44,10 +43,11 @@ permalink: /resume
     <h2>Education</h2>
 
     {% for qualification in site.resume-items.qualifications %}
-    <div class="qualification">
+    <div class="qualification" itemscope itemtype="http://schema.org/EducationalOrganization">
       <span class="experience-date">{{ qualification.date }}</span>
-      <h3>{{ qualification.awarding-body }}</h3>
+      <h3 itemprop="name">{{ qualification.awarding-body }}</h3>
       <p>{{ qualification.title }}</p>
+      <span class="hidden" itemprop="alumni">{{ site.resume-items.name }}</span>
     </div>
     {% endfor %}
     <div class="resume-divider">&nbsp;</div>
@@ -57,8 +57,8 @@ permalink: /resume
     <h2>Experience</h2>
 
     {% for experience in site.resume-items.experiences %}
-      <div class="experience-item">
-        <span class="experience-date">{{ experience.start-date }} - {{ experience.end-date }}</span>
+      <div class="experience-item" itemscope itemtype="http://schema.org/Organization">
+        <span class="experience-date" itemprop="time">{{ experience.start-date }} - {{ experience.end-date }}</span>
         <div class="grid-container">
           <div class="one-half col map-container">
             <div class="row">
@@ -69,9 +69,10 @@ permalink: /resume
           </div>
 
           <div class="one-half col experience-title">
-            <h3 class="no-margin">{{ experience.title }}</h3>
+            <h3 class="no-margin" itemprop="jobTitle">{{ experience.title }}</h3>
             <p class="no-margin"> at </p>
-            <h4 class="no-margin"> {{ experience.company }}</h4>
+            <h4 itemprop="name"> {{ experience.company }}</h4>
+            <p itemprop="address">{{ experience.address }}</p>
           </div>
         </div>
         <ul>
@@ -98,21 +99,30 @@ permalink: /resume
     <div class="resume-divider">&nbsp;</div>
   </section>
 
+  {% if site.email %}
+  <!-- Contact form -->
   <section id="contact">
-    <h2>Contact</h2>
-    <form action="//formspree.io/{{ site.email }}"
-    method="POST" class="formspree">
-      <input type="email" name="_replyto" placeholder="your email" maxlength="36" pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+" class="email" required />
+      <h2>{{ site.title | prepend: 'Contact ' }}</h2>
+      <form action="//formspree.io/{{ site.email }}"
+      method="POST" class="formspree">
+        <input type="text" placeholder="your name" class="name" rows="1" required />
 
-      <textarea name="message" placeholder="your message" rows="3"></textarea>
+        <input type="email" name="email" placeholder="your email" maxlength="36" pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+" class="email" required />
 
-      <input type="submit" value="Get In Touch" class="submit" />
+        <textarea name="message" placeholder="your message" rows="3" class="message"></textarea>
+        <input type="hidden" name="_subject" value="Source: {{ site.baseurl | prepend: site.url }} contact form submission" />
+        <button type="submit" class="send">ok, send it</button>
 
-      <input type="text" name="_gotcha" style="display:none" />
-
-      <input type="hidden" name="_next" value="/success-get-involved" />
-    </form>
-  </section>
+        <input type="text" name="_gotcha" style="display:none" />
+        <input type="hidden" name="_next" value="/" />
+      </form>
+    </section><!-- End form -->
+  {% endif %}
+  {% if site.twitter_username %}<a class="hidden" itemprop="sameAs" href="{{ site.twitter_username }}">Twitter</a>{% endif %}
+  {% if site.github_username %}<a class="hidden" itemprop="sameAs" href="{{ site.github_username }}">Github</a>{% endif %}
+  {% if site.linkedin_username %}<a class="hidden" itemprop="sameAs" href="{{ site.linkedin_username }}">LinkedIn</a>{% endif %}
 </article>
 
 {% include resume-mapjs.html %}
+
+{% include formjs.html %}

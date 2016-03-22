@@ -345,6 +345,9 @@ pre {
 .right {
   text-align: right; }
 
+.hidden {
+  display: none; }
+
 /**
  * Site header
  */
@@ -356,7 +359,7 @@ pre {
 
 .site-title h1 {
   float: left;
-  font-size: 2.6rem;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 5rem;
   letter-spacing: 0.18rem;
@@ -365,7 +368,8 @@ pre {
   color: #1DA1F2; }
   @media screen and (max-width: 750px) {
     .site-title h1 {
-      margin-left: 1rem; } }
+      margin-left: 1rem;
+      font-size: 2.6rem; } }
   .site-title h1:hover {
     text-decoration: none; }
 
@@ -924,14 +928,14 @@ article.resume-items, section#resume {
   article.resume-items div.resume-divider, section#resume div.resume-divider {
     width: 50%;
     margin: 0 auto 1.5rem;
-    border-bottom: 2px solid #e5e5e5; }
+    border-bottom: 2px solid #2e2e2e; }
   article.resume-items section#summary, section#resume section#summary {
     position: relative;
     background: #e5e5e5;
     border-bottom: 0.2rem solid #2e2e2e;
     width: 70%;
     margin: 0 auto 1.5rem;
-    padding: 1.5rem 3rem 0;
+    padding: 1.5rem 3rem 1.5rem;
     box-sizing: border-box; }
     @media screen and (max-width: 800px) {
       article.resume-items section#summary, section#resume section#summary {
@@ -976,7 +980,7 @@ article.resume-items, section#resume {
     article.resume-items section#languages div svg, section#resume section#languages div svg {
       width: 33.33333333%;
       height: auto;
-      border: 1px solid #e5e5e5;
+      border: none;
       border-radius: 50%;
       -webkit-transition: transform 250ms ease-in;
       transition: transform 250ms ease-in; }
@@ -987,6 +991,10 @@ article.resume-items, section#resume {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05); }
+  article.resume-items span.experience-date, section#resume span.experience-date {
+    display: table;
+    margin: 0 auto;
+    border-bottom: 2px solid #2e2e2e; }
   @media screen and (max-width: 750px) {
     article.resume-items section#skills h2, section#resume section#skills h2 {
       margin-bottom: 0; } }
@@ -1010,25 +1018,22 @@ article.resume-items, section#resume {
     article.resume-items section#skills div.measure-container div.skill-measure, section#resume section#skills div.measure-container div.skill-measure {
       height: 4.8rem;
       background: #1DA1F2; }
-  article.resume-items span.experience-date, section#resume span.experience-date {
-    display: table;
-    margin: 0 auto 3rem;
-    border-bottom: 2px solid #2e2e2e; }
   article.resume-items section#education div.qualification, section#resume section#education div.qualification {
-    width: 90%;
-    margin: auto 5% 3rem;
+    width: 80%;
+    margin: auto auto 3rem;
     background: #e5e5e5;
     border-left: 2px solid #1DA1F2;
     padding: 1.5rem;
     box-sizing: border-box; }
-  article.resume-items section#education span, section#resume section#education span {
-    float: right; }
+    @media screen and (max-width: 800px) {
+      article.resume-items section#education div.qualification, section#resume section#education div.qualification {
+        width: 90%; } }
   article.resume-items section#education h3, section#resume section#education h3 {
     margin-top: 3rem;
     margin-bottom: 1.5rem; }
   article.resume-items section#experience div.experience-item, section#resume section#experience div.experience-item {
     display: block;
-    width: 90%;
+    width: 80%;
     margin: auto auto 3rem;
     background: #e5e5e5;
     border-left: 2px solid #1DA1F2;
@@ -1040,10 +1045,10 @@ article.resume-items, section#resume {
       article.resume-items section#experience div.experience-item, section#resume section#experience div.experience-item {
         width: 90%; } }
     article.resume-items section#experience div.experience-item #resume-map-wrapper, section#resume section#experience div.experience-item #resume-map-wrapper {
-      height: 300px; }
+      height: 280px; }
       @media screen and (max-width: 800px) {
         article.resume-items section#experience div.experience-item #resume-map-wrapper, section#resume section#experience div.experience-item #resume-map-wrapper {
-          height: 260px;
+          height: 240px;
           width: auto; } }
       @media screen and (max-width: 750px) {
         article.resume-items section#experience div.experience-item #resume-map-wrapper, section#resume section#experience div.experience-item #resume-map-wrapper {
@@ -1051,7 +1056,8 @@ article.resume-items, section#resume {
           width: auto; } }
   article.resume-items section#experience div.experience-title, section#resume section#experience div.experience-title {
     text-align: center;
-    margin-top: 10%; }
+    padding: 10% 1.5rem 0;
+    box-sizing: border-box; }
   article.resume-items section#experience ul, section#resume section#experience ul {
     list-style: none;
     margin-left: 0;
@@ -1072,19 +1078,20 @@ article.resume-items, section#resume {
     margin: 0 auto; }
   article.resume-items section#interests div.interest, section#resume section#interests div.interest {
     text-align: center; }
+    @media screen and (max-width: 750px) {
+      article.resume-items section#interests div.interest p, section#resume section#interests div.interest p {
+        font-size: 1.4rem; } }
     article.resume-items section#interests div.interest svg, section#resume section#interests div.interest svg {
       width: 9.6rem;
       height: 9.6rem;
       -webkit-transition: all 250ms ease-in;
       transition: all 250ms ease-in; }
+      article.resume-items section#interests div.interest svg *, section#resume section#interests div.interest svg * {
+        fill: #1DA1F2; }
       @media screen and (max-width: 750px) {
         article.resume-items section#interests div.interest svg, section#resume section#interests div.interest svg {
           width: 4.8rem;
           height: 4.8rem; } }
-      article.resume-items section#interests div.interest svg path, section#resume section#interests div.interest svg path {
-        fill: #1DA1F2; }
-      article.resume-items section#interests div.interest svg circle, section#resume section#interests div.interest svg circle {
-        stroke: #1DA1F2; }
     article.resume-items section#interests div.interest svg.web .web-icon-bg, section#resume section#interests div.interest svg.web .web-icon-bg {
       fill: #1DA1F2; }
     article.resume-items section#interests div.interest svg.web circle, article.resume-items section#interests div.interest svg.web ellipse, article.resume-items section#interests div.interest svg.web path, section#resume section#interests div.interest svg.web circle, section#resume section#interests div.interest svg.web ellipse, section#resume section#interests div.interest svg.web path {
@@ -1103,7 +1110,7 @@ article.resume-items, section#resume {
       transform: scale(1.05); }
   article.resume-items section#contact > form.formspree, section#resume section#contact > form.formspree {
     margin-top: 3rem; }
-    article.resume-items section#contact > form.formspree input.email, article.resume-items section#contact > form.formspree textarea, section#resume section#contact > form.formspree input.email, section#resume section#contact > form.formspree textarea {
+    article.resume-items section#contact > form.formspree input.email, article.resume-items section#contact > form.formspree input.name, article.resume-items section#contact > form.formspree textarea, section#resume section#contact > form.formspree input.email, section#resume section#contact > form.formspree input.name, section#resume section#contact > form.formspree textarea {
       display: block;
       width: 50%;
       margin: 0 auto 1.5rem;
@@ -1114,12 +1121,12 @@ article.resume-items, section#resume {
       background: #e5e5e5;
       color: #2e2e2e; }
       @media screen and (max-width: 800px) {
-        article.resume-items section#contact > form.formspree input.email, article.resume-items section#contact > form.formspree textarea, section#resume section#contact > form.formspree input.email, section#resume section#contact > form.formspree textarea {
+        article.resume-items section#contact > form.formspree input.email, article.resume-items section#contact > form.formspree input.name, article.resume-items section#contact > form.formspree textarea, section#resume section#contact > form.formspree input.email, section#resume section#contact > form.formspree input.name, section#resume section#contact > form.formspree textarea {
           width: 60%; } }
       @media screen and (max-width: 750px) {
-        article.resume-items section#contact > form.formspree input.email, article.resume-items section#contact > form.formspree textarea, section#resume section#contact > form.formspree input.email, section#resume section#contact > form.formspree textarea {
+        article.resume-items section#contact > form.formspree input.email, article.resume-items section#contact > form.formspree input.name, article.resume-items section#contact > form.formspree textarea, section#resume section#contact > form.formspree input.email, section#resume section#contact > form.formspree input.name, section#resume section#contact > form.formspree textarea {
           width: 66.66666666%; } }
-    article.resume-items section#contact > form.formspree input.submit, section#resume section#contact > form.formspree input.submit {
+    article.resume-items section#contact > form.formspree button.send, section#resume section#contact > form.formspree button.send {
       display: table;
       margin: 0 auto 3rem;
       padding: .5rem 1rem;
@@ -1128,9 +1135,21 @@ article.resume-items, section#resume {
       border: 2px solid #2e2e2e;
       -webkit-transition: all 250ms ease-in;
       transition: all 250ms ease-in; }
-    article.resume-items section#contact > form.formspree input.submit:hover, section#resume section#contact > form.formspree input.submit:hover {
+    article.resume-items section#contact > form.formspree button.send:hover, section#resume section#contact > form.formspree button.send:hover {
       color: #1DA1F2;
       border: 2px solid #1DA1F2; }
+    article.resume-items section#contact > form.formspree div.status, section#resume section#contact > form.formspree div.status {
+      display: table;
+      margin: 0 auto 1.5rem;
+      text-align: center;
+      font-weight: 400;
+      padding: 1.5rem 3rem; }
+    article.resume-items section#contact > form.formspree div.failure, section#resume section#contact > form.formspree div.failure {
+      color: #e0021f;
+      border: 1px solid #e0021f; }
+    article.resume-items section#contact > form.formspree div.success, section#resume section#contact > form.formspree div.success {
+      color: #1ef16e;
+      border: 1px solid #1ef16e; }
 
 /**
  * Portfolio slideshow (adapted from http://codepen.io/paulnoble/pen/ZYOzLG)
