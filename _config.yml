@@ -43,7 +43,6 @@ jekyll-mentions: https://twitter.com
 # Collections
 collections:
   portfolio-items:
-    permalink: /portfolio/:path
     title: Portfolio # This will appear on your homepage
     output: true # No pages for each portfolio item
 

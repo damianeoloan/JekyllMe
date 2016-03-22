@@ -1,14 +1,14 @@
 <script type="text/javascript">
 function initMap() {
   {% for experience in site.resume-items.experiences %}var map_{{ forloop.index }};
-  var LatLang_{{ forloop.index }} = {{ experience.coordinates.latitude | prepend: '{lat: ' }}, {{ experience.coordinates.longitude | prepend: 'lng: ' }}};
+  var LatLng_{{ forloop.index }} = {{ experience.coordinates.latitude | prepend: '{lat: ' }}, {{ experience.coordinates.longitude | prepend: 'lng: ' }}};
   {% endfor %}
   {% for experience in site.resume-items.experiences %}var map_{{ forloop.index }} = new google.maps.Map(document.getElementById('map_{{ forloop.index }}'), {
     zoom: 8,
-    center: myLatLng_{{ forloop.index }}
+    center: LatLng_{{ forloop.index }}
   });
   var marker_{{ forloop.index }} = new google.maps.Marker({
-    position: myLatLng_{{ forloop.index }},
+    position: LatLng_{{ forloop.index }},
     map: map_{{ forloop.index }},
     title: '{{ experience.address }}'
   });
@@ -16,5 +16,4 @@ function initMap() {
 
 </script>
 
-<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.api_keys.google }}&callback=initMap"
-  type="text/javascript">
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.api_keys.google }}&callback=initMap"></script>
