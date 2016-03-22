@@ -60,9 +60,14 @@ permalink: /cv/
       <div class="experience-item">
         <span class="experience-date">{{ experience.start-date }} - {{ experience.end-date }}</span>
         <div class="grid-container">
-          <div class="one-half col">
-            <div><iframe width="260" height=260" frameborder="0" src="https://www.bing.com/maps/embed/viewer.aspx?v=3&amp;cp={{ experience.coordinates.latitude }}~{{ experience.coordinates.longitude }}&amp;lvl=9&amp;w=300&amp;h=300&amp;sty=r&amp;typ=d&amp;pp=&amp;ps=&amp;dir=0&amp;mkt=en-gb&amp;src=SHELL&amp;form=BMEMJS"></iframe></div>
+          <div class="one-half col map-container">
+            <div class="row">
+              <div id="resume-map-wrapper">
+                <div id="map_{{ forloop.index }}" style="width:100%; height:100%"></div>
+              </div>
+            </div>
           </div>
+
           <div class="one-half col experience-title">
             <h3 class="no-margin">{{ experience.title }}</h3>
             <p class="no-margin"> at </p>
@@ -109,3 +114,5 @@ permalink: /cv/
     </form>
   </section>
 </article>
+
+{% include resume-mapjs.html %}

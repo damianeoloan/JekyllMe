@@ -36,10 +36,10 @@ term
 : definition
 : another definition
 
-~~~
+{% highlight html %}
 <div class="footer">
   &copy; 2004 Foo Corporation
 </div>
-~~~
+{% endhighlight %}
 
-`for cat in site.cats`
+`{% raw %}{% for cat in site.cats %}{% endraw %}`

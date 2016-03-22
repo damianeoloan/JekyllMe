@@ -184,15 +184,15 @@ p, span, figcaption, ol li, ul li {
 
   p, span, figcaption, ol li, ul li {
     font-size: 2rem; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
   h1 {
-    font-size: 3.0rem; }
+    font-size: 3.5rem; }
 
   h2 {
-    font-size: 2.5rem; }
+    font-size: 3rem; }
 
   h3 {
-    font-size: 2.4rem; }
+    font-size: 2.6rem; }
 
   h4 {
     font-size: 2.2rem; }
@@ -201,35 +201,10 @@ p, span, figcaption, ol li, ul li {
     font-size: 2.0rem; }
 
   h6 {
-    font-size: 1.5rem; }
-
-  p, span, figcaption, ol li, ul li {
-    font-size: 1.6rem; } }
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 2.5rem; }
-
-  h2 {
-    font-size: 2.3rem; }
-
-  h3 {
-    font-size: 2.1rem; }
-
-  h4 {
-    font-size: 2.0rem; }
-
-  h5 {
-    font-size: 1.8rem; }
-
-  h6 {
     font-size: 1.6rem; }
 
-  p, span, figure figcaption, ol li, ul li {
-    font-size: 1.8rem;
-    line-height: 2.7rem; }
-
-  h1, h2, h3, h4, h5, h6, p, figcaption {
-    -webkit-font-smoothing: subpixel-antialiased; } }
+  p, span, figcaption, ol li, ul li {
+    font-size: 2rem; } }
 /**
  * Links
  */
@@ -254,6 +229,12 @@ blockquote {
   font-size: 3.6rem;
   letter-spacing: -1px;
   margin: 0 auto 3rem; }
+  @media screen and (max-width: 800px) {
+    blockquote {
+      max-width: 80%; } }
+  @media screen and (max-width: 750px) {
+    blockquote {
+      max-width: 90%; } }
   blockquote > :last-child {
     margin-bottom: 0; }
   blockquote:before {
@@ -382,7 +363,7 @@ pre {
   margin-bottom: 0;
   margin-left: 3rem;
   color: #1DA1F2; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     .site-title h1 {
       margin-left: 1rem; } }
   .site-title h1:hover {
@@ -398,7 +379,7 @@ div.icon-container {
   @media screen and (max-width: 800px) {
     div.icon-container {
       margin-right: 2rem; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     div.icon-container {
       margin-right: 1rem; } }
 
@@ -441,7 +422,7 @@ div.nav-container {
       @media screen and (max-width: 800px) {
         div.nav-container label svg.close-nav {
           margin-right: 3rem; } }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         div.nav-container label svg.close-nav {
           margin-right: 2rem; } }
 
@@ -460,7 +441,7 @@ nav.menu {
       font-size: 5rem; }
     nav.menu a {
       font-size: 4rem; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     nav.menu h1 {
       font-size: 4rem; }
     nav.menu a {
@@ -485,7 +466,7 @@ nav.menu a.nav-link {
   opacity: 0.6;
   -webkit-transition: opacity 0.5s ease-in;
   transition: opacity 0.5s ease-in; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     nav.menu a.nav-link {
       font-size: 3.2rem; } }
   nav.menu a.nav-link:last-of-type {
@@ -511,7 +492,7 @@ input#ctrl:checked ~ nav.menu a.page-link {
   display: block;
   width: 66.66666666%;
   margin: 0 auto; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     .footer-container {
       width: 100%; } }
 
@@ -530,7 +511,7 @@ nav.footer-nav {
     transition: color 250ms ease-in; }
     nav.footer-nav a:not(:last-of-type) {
       border-right: 1px solid #e5e5e5; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       nav.footer-nav a {
         padding: .1rem 1em; } }
   nav.footer-nav a:hover {
@@ -549,7 +530,7 @@ ul.profile-list {
     ul.profile-list li svg {
       width: 4rem;
       height: 4rem; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         ul.profile-list li svg {
           width: 3.6rem;
           height: 3.6rem; } }
@@ -633,7 +614,7 @@ h1.post-title {
           fill: #1DA1F2; }
         .post-content div.social-shares a.share-item svg:hover circle {
           stroke: #1DA1F2; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     .post-content {
       width: 66.66666666%; } }
 
@@ -700,14 +681,14 @@ ul.blog-index {
   @media screen and (max-width: 800px) {
     ul.blog-index {
       width: 70%; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     ul.blog-index {
       width: 90%; } }
   ul.blog-index li {
     position: relative;
     text-align: left;
     padding: 3rem; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       ul.blog-index li {
         padding: 1rem; } }
     ul.blog-index li svg.post-meta {
@@ -749,7 +730,7 @@ ul.blog-index {
         padding: 0 0.75rem;
         -webkit-transition: transform 250ms ease-in;
         transition: transform 250ms ease-in; }
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 750px) {
           ul.blog-index li div.social-shares a.share-item svg {
             width: 4.2rem;
             height: 4.2rem; } }
@@ -767,7 +748,7 @@ ul.blog-index {
       text-decoration: none; }
     ul.blog-index li p.timer {
       font-size: 1.75rem; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       ul.blog-index li iframe {
         visibility: hidden;
         height: 0; } }
@@ -822,7 +803,7 @@ ul.blog-index {
 
 div.pagination {
   margin: 3rem 30%; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     div.pagination {
       margin: 3rem 5%; } }
   div.pagination .paginate-link {
@@ -856,7 +837,7 @@ div.pagination {
  */
 section.hero {
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   background: #2e2e2e;
   color: #fdfdfd;
   margin: 0;
@@ -865,7 +846,7 @@ section.hero {
     text-align: center;
     padding-top: 20vh;
     margin: 0 auto 6rem; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       section.hero div.namecard {
         padding-top: 10vh;
         margin: 0 auto 3rem; } }
@@ -875,7 +856,7 @@ section.hero {
       border: 2px solid #e5e5e5;
       border-radius: 50%;
       margin: 1.5rem auto; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         section.hero div.namecard img {
           width: 25%; } }
     section.hero div.namecard h1 {
@@ -891,7 +872,7 @@ section.hero {
     section.hero ul.cta li {
       display: inline-block;
       margin-right: 3rem; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         section.hero ul.cta li {
           margin-right: 1rem; } }
       section.hero ul.cta li:last-of-type {
@@ -904,7 +885,7 @@ section.hero {
       text-align: center;
       transition: 250ms ease-in;
       z-index: 1; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         section.hero ul.cta a.button {
           padding: 0.75rem 1.5rem; } }
     section.hero ul.cta a.button:hover {
@@ -936,7 +917,7 @@ article.resume-items, section#resume {
   margin: auto;
   background: #fdfdfd;
   padding: 0 3rem 1.5rem; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     article.resume-items, section#resume {
       width: 90%;
       padding: 0 1.5rem 1.5rem; } }
@@ -955,7 +936,7 @@ article.resume-items, section#resume {
     @media screen and (max-width: 800px) {
       article.resume-items section#summary, section#resume section#summary {
         width: 70%; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       article.resume-items section#summary, section#resume section#summary {
         width: 90%;
         padding: 1.5rem 0.5rem 0; } }
@@ -964,9 +945,9 @@ article.resume-items, section#resume {
       margin: 0 auto 1.5rem;
       width: 25%;
       height: auto;
-      border: 2px solid #e5e5e5;
+      border: 2px solid #a5a5a5;
       border-radius: 50%; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         article.resume-items section#summary img, section#resume section#summary img {
           float: none;
           display: block;
@@ -981,7 +962,7 @@ article.resume-items, section#resume {
     padding-bottom: 3rem; }
     article.resume-items div.summary img, section#resume div.summary img {
       width: 15%; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         article.resume-items div.summary img, section#resume div.summary img {
           width: 30%;
           margin-bottom: 1.5rem; } }
@@ -989,7 +970,7 @@ article.resume-items, section#resume {
     float: left;
     width: 33.33333333%;
     text-align: center; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       article.resume-items section#languages div, section#resume section#languages div {
         width: 100%; } }
     article.resume-items section#languages div svg, section#resume section#languages div svg {
@@ -999,14 +980,14 @@ article.resume-items, section#resume {
       border-radius: 50%;
       -webkit-transition: transform 250ms ease-in;
       transition: transform 250ms ease-in; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         article.resume-items section#languages div svg, section#resume section#languages div svg {
           width: 30%; } }
   article.resume-items section#languages svg:hover, section#resume section#languages svg:hover {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05); }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     article.resume-items section#skills h2, section#resume section#skills h2 {
       margin-bottom: 0; } }
   article.resume-items section#skills div.skills-container, section#resume section#skills div.skills-container {
@@ -1023,7 +1004,7 @@ article.resume-items, section#resume {
     margin: 0 auto 1.5rem;
     height: 4.8rem;
     background: #e5e5e5; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       article.resume-items section#skills div.measure-container, section#resume section#skills div.measure-container {
         margin-bottom: 0; } }
     article.resume-items section#skills div.measure-container div.skill-measure, section#resume section#skills div.measure-container div.skill-measure {
@@ -1055,13 +1036,21 @@ article.resume-items, section#resume {
     box-sizing: border-box; }
     article.resume-items section#experience div.experience-item:last-of-type, section#resume section#experience div.experience-item:last-of-type {
       margin-bottom: 0; }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       article.resume-items section#experience div.experience-item, section#resume section#experience div.experience-item {
         width: 90%; } }
-  article.resume-items section#experience iframe, section#resume section#experience iframe {
-    clear: none;
-    margin: 0 auto;
-    display: block; }
+    article.resume-items section#experience div.experience-item .map-container, section#resume section#experience div.experience-item .map-container {
+      padding: 0.05rem; }
+    article.resume-items section#experience div.experience-item #resume-map-wrapper, section#resume section#experience div.experience-item #resume-map-wrapper {
+      height: 300px; }
+      @media screen and (max-width: 800px) {
+        article.resume-items section#experience div.experience-item #resume-map-wrapper, section#resume section#experience div.experience-item #resume-map-wrapper {
+          height: 260px;
+          width: auto; } }
+      @media screen and (max-width: 750px) {
+        article.resume-items section#experience div.experience-item #resume-map-wrapper, section#resume section#experience div.experience-item #resume-map-wrapper {
+          height: 220px;
+          width: auto; } }
   article.resume-items section#experience div.experience-title, section#resume section#experience div.experience-title {
     text-align: center;
     margin-top: 10%; }
@@ -1090,7 +1079,7 @@ article.resume-items, section#resume {
       height: 9.6rem;
       -webkit-transition: all 250ms ease-in;
       transition: all 250ms ease-in; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         article.resume-items section#interests div.interest svg, section#resume section#interests div.interest svg {
           width: 4.8rem;
           height: 4.8rem; } }
@@ -1129,7 +1118,7 @@ article.resume-items, section#resume {
       @media screen and (max-width: 800px) {
         article.resume-items section#contact > form.formspree input.email, article.resume-items section#contact > form.formspree textarea, section#resume section#contact > form.formspree input.email, section#resume section#contact > form.formspree textarea {
           width: 60%; } }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 750px) {
         article.resume-items section#contact > form.formspree input.email, article.resume-items section#contact > form.formspree textarea, section#resume section#contact > form.formspree input.email, section#resume section#contact > form.formspree textarea {
           width: 66.66666666%; } }
     article.resume-items section#contact > form.formspree input.submit, section#resume section#contact > form.formspree input.submit {
@@ -1154,18 +1143,15 @@ div.slideshow-container {
   height: 600px;
   margin: 0 auto;
   overflow: hidden !important; }
-  @media screen and (max-width: 1020px) {
-    div.slideshow-container {
-      width: 780px;
-      height: 520px; } }
   @media screen and (max-width: 800px) {
     div.slideshow-container {
-      width: 600px;
-      height: 400px; } }
-  @media screen and (max-width: 600px) {
+      width: 799px;
+      height: 566px; } }
+  @media screen and (max-width: 750px) {
     div.slideshow-container {
-      width: 320px;
-      height: 214px; } }
+      width: 510px;
+      height: 370px;
+      max-width: 100%; } }
   div.slideshow-container:hover .slide:after, div.slideshow-container:hover .counter, div.slideshow-container:hover .slide:before {
     opacity: 1; }
 
@@ -1181,18 +1167,16 @@ div.slideshow-container {
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   opacity: 1; }
-  @media screen and (max-width: 1020px) {
-    .slide {
-      width: 780px;
-      height: 520px; } }
   @media screen and (max-width: 800px) {
     .slide {
-      width: 600px;
-      height: 400px; } }
-  @media screen and (max-width: 600px) {
+      width: 799px;
+      height: 566px; } }
+  @media screen and (max-width: 750px) {
     .slide {
-      width: 320px;
-      height: 214px; } }
+      width: 510px;
+      height: 370px;
+      max-width: 100%;
+      overflow: hidden; } }
   .slide:before {
     content: attr(annot);
     display: block;
@@ -1212,7 +1196,7 @@ div.slideshow-container {
       .slide:before {
         width: 75%;
         left: 12%; } }
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 750px) {
       .slide:before {
         height: 6rem;
         width: 100%;
@@ -1234,11 +1218,9 @@ div.slideshow-container {
       .slide:after {
         left: 1rem;
         text-indent: 76%; } }
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 750px) {
       .slide:after {
-        left: 1rem;
-        text-indent: 76%;
-        bottom: -1.8rem; } }
+        content: none; } }
 
 div.image-container {
   display: block;
@@ -1263,10 +1245,9 @@ div.counter {
   @media screen and (max-width: 800px) {
     div.counter {
       right: 12.5%; } }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     div.counter {
-      right: 2%;
-      bottom: 2.2rem; } }
+      display: none; } }
 
 input.slideshow-ctrl {
   float: right;
@@ -1305,7 +1286,7 @@ input.slideshow-ctrl {
 
 div.portfolio-content {
   clear: both; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     div.portfolio-content {
       max-width: 300px; } }
 
@@ -1374,7 +1355,7 @@ ul.portfolio-index {
           transform: scale(1.2); }
     ul.portfolio-index li figure:hover figcaption, ul.portfolio-index li figure:hover a.share-item svg {
       opacity: 1; }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 750px) {
     ul.portfolio-index .one-half {
       width: 100%; } }
 

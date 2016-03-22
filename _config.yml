@@ -7,7 +7,7 @@
 
 # Site settings
 title: JekyllMe
-avatar_path: "/img/avatar.jpg" # The location of your homepage avatar
+avatar_path: "/img/avatar.svg" # The location of your homepage avatar
 description: > # this means to ignore newlines until "baseurl:"
   your free personal website
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -23,6 +23,10 @@ email: your-email@domain.com # To receive emails from the contact form, you'll n
 
 # Build settings
 markdown: kramdown
+
+# API keys
+api_keys:
+  google: "AIzaSyBTrns7kOi-WxTG7d-IrwzApkn4JvlCL5c"
 
 # Gems
 gems:
@@ -42,10 +46,10 @@ collections:
 
 resume-items:
 # Resume summary
-  name: "Damian O'Loan"
-  title: "Translation / Front End Development" # Your job title
-  location: "Belfast, UK" # Your current location
-  avatar: "/img/avatar.jpg"
+  name: "John Doe"
+  title: "Frontend Developer" # Your job title
+  location: "London, UK" # Your current location
+  avatar: "/img/avatar.svg"
 # Resume languages
   languages: # SVG Flags adapted from https://github.com/lipis/flag-icon-css
   - name: English
@@ -95,65 +99,68 @@ resume-items:
         </svg>
 # Resume skills
   skills:
-  - name: HTML5
+  - name: Skill 1
     level: 90 # How you score yourself for this skill, expressed as a %
     icon: ""
-  - name: CSS3
+  - name: Skill 2
     level: 90
     icon: ""
-  - name: Liquid
+  - name: Skill 3
     level: 80
     icon: ""
-  - name: JQuery
+  - name: Skill 4
     level: 60
     icon: ""
-  - name: JavaScript
+  - name: Skill 5
     level: 40
     icon: ""
-  - name: "YAML / JSON"
+  - name: Skill 6
     level: 30
     icon: ""
-  - name: Ruby
+  - name: Skill 7
     level: 20
     icon: ""
   experiences:
-  - title: Product Manager (UX)
-    company: OKCoin
+  - title: A job title
+    company: A company name
+    addresss: 1 Random St, Randomville
     coordinates:
       latitude: 40.036730
       longitude: 116.315243
-    start-date: 10/2014
-    end-date: 04/2015
+    start-date: 01/2014
+    end-date: 01/2016
     details:
-      - "UX research and wireframes for OKLink Bitcoin wallet"
-      - "UX research and wireframes for OKCoin Bitcoin exchange sign-in/sign-up flow"
-      - "Chinese to English translation"
-  - title: Content Manager
-    company: Alibaba Group
+      - "Something you achieved in this position"
+      - "Something else you achieved in this position"
+      - "Something else you achieved in this position"
+  - title: Another job title
+    company: Another company name
+    address: 2 Random Rd, Randomville
     coordinates:
       latitude: 30.189894
       longitude: 120.190178
-    start-date: 01/2013
-    end-date: 10/2014
+    start-date: 01/2012
+    end-date: 01/2014
     details:
-      - "Collaboration with design & product teams to create, and measure the performance of, content for Alibaba.com, the world's leading B2B platform"
-      - "Research and translation projects for Alipay Wallet, the B2C platform AliExpress and Alibaba.com logistics services"
-      - "Chinese to English translation"
-  - title: International Project Manager
-    company: MoodByMe.com
+      - "Something you achieved in this position"
+      - "Something else you achieved in this position"
+      - "Something else you achieved in this position"
+  - title: Another job title
+    company: Another company name
+    address: 3 Random Ave, Randomville
     coordinates:
       latitude: 31.226251
       longitude: 121.449163
-    start-date: 01/2012
-    end-date: 01/2013
+    start-date: 01/2010
+    end-date: 01/2012
     details:
-      - "Translation and localization of a French-language custom fashion e-commerce store"
-      - "Google Adwords & Facebook marketing management"
-      - "French to English translation"
+      - "Something you achieved in this position"
+      - "Something you achieved in this position"
+      - "Something you achieved in this position"
   qualifications:
-    - title: "MA Hons French & Philosophy"
-      awarding-body: "University of Edinburgh"
-      date: "06/2005"
+    - title: "MA Hons Philosophy"
+      awarding-body: "University of Jekyll"
+      date: "06/2000"
   interests:
   - name: webs!
     icon: !xml |

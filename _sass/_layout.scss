@@ -558,7 +558,7 @@ div.pagination {
  */
  section.hero {
    width: 100%;
-   min-height: 100vh;
+   height: 100vh;
    background: $dark-grey;
    color: $white-color;
    margin: 0;
@@ -676,7 +676,7 @@ article.resume-items, section#resume {
       margin: 0 auto $spacing-unit/2;
       width: 25%;
       height: auto;
-      border: 2px solid $grey-color;
+      border: 2px solid $grey-color-dark;
       border-radius: 50%;
       @include media-query($on-mobile) {
         float: none;
@@ -788,11 +788,15 @@ article.resume-items, section#resume {
       box-sizing: border-box;
       &:last-of-type { margin-bottom: 0; }
       @include media-query($on-mobile) { width: 90%; }
-    }
-    iframe {
-      clear: none;
-      margin: 0 auto;
-      display: block;
+
+      .map-container {
+        padding: 0.05rem;
+      }
+      #resume-map-wrapper {
+        height: 300px;
+        @include media-query($on-tablet) { height: 260px; width: auto; }
+        @include media-query($on-mobile) { height: 220px; width: auto; }
+      }
     }
     div.experience-title {
       text-align: center;
@@ -914,17 +918,14 @@ div.slideshow-container {
   height: 600px;
   margin: 0 auto;
   overflow: hidden !important;
-  @include media-query($on-desktop) {
-    width: 780px;
-    height: 520px;
-  }
   @include media-query($on-tablet) {
-    width: 600px;
-    height: 400px;
+    width: 799px;
+    height: 566px;
   }
   @include media-query($on-mobile) {
-    width: 320px;
-    height: 214px;
+    width: 510px;
+    height: 370px;
+    max-width: 100%;
   }
   &:hover {
     .slide:after, .counter, .slide:before {
@@ -945,17 +946,15 @@ div.slideshow-container {
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
   opacity: 1;
-  @include media-query($on-desktop) {
-    width: 780px;
-    height: 520px;
-  }
   @include media-query($on-tablet) {
-    width: 600px;
-    height: 400px;
+    width: 799px;
+    height: 566px;
   }
   @include media-query($on-mobile) {
-    width: 320px;
-    height: 214px;
+    width: 510px;
+    height: 370px;
+    max-width: 100%;
+    overflow: hidden;
   }
   &:before {
     content: attr(annot);
@@ -999,10 +998,8 @@ div.slideshow-container {
     left: 1rem;
     text-indent: 76%;
   }
-  @include media-query($on-tablet) {
-    left: 1rem;
-    text-indent: 76%;
-    bottom: -1.8rem;
+  @include media-query($on-mobile) {
+    content: none;
   }
   }
 }
@@ -1031,8 +1028,7 @@ div.counter {
   transition: opacity 0.5s ease-in;
   @include media-query($on-tablet) { right: 12.5%; }
   @include media-query($on-mobile) {
-    right: 2%;
-    bottom: 2.2rem;
+    display: none;
   }
 }
 
